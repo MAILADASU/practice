@@ -1,0 +1,21 @@
+<html>
+
+<head>
+    <title></title>
+
+    <script type="text/javascript">
+        var myArray = [1, 2, 5, 2, 5, 3, 6, 4, 9, 8, 9, 7];
+        myArray.sort(function (a, b) { return b - a })
+        var result = myArray.filter(function (value, index, array) {
+            return array.indexOf(value) == index;
+        })
+        document.write(result)
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

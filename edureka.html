@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title></title>
+        <script src="jquery-3.6.0.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function()
+            {
+                $("button").click(funcion()
+                {
+                    var answer=$('#answer-box').val();
+                    if(answer=='hyderabad')
+                    {
+                        $('#result').text('your answer is correct');
+                    }
+                    else
+                    {
+                        $('#result').html('<span style="color:red">your answer is incorrect</span>')
+                        $('#answer').text('correct answer is hyderabad');
+                    }
+                })
+            });
+        </script>
+    </head>
+    <body>
+       <div id="container">
+           <p id="question"> what is the capital of india</p>
+           <input type="text"id="answer-box"?>
+           <p id="result"></p>
+           <p id="answer"></p>
+           <button>submit</button>
+       </div>
+    </body>
+</html>
